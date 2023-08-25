@@ -1,0 +1,55 @@
+{
+  "items": [
+    {
+      "item": "Oatmeal (1 cup)",
+      "calories": 150
+    },
+    {
+      "item": "1 Eggs",
+      "calories": 80
+    },
+    {
+      "item": "Greek Yogurt",
+      "calories": 100
+    },
+    {
+      "item": "Roti (1 piece) with ghee",
+      "calories": 100
+    },
+    {
+      "item": "White Rice (1 cup)",
+      "calories": 100
+    },
+    {
+      "item": "Yellow Roasted Chana (1.75 oz(50g))",
+      "calories": 99
+    },
+    {
+      "item": "1 Ajwa Dates",
+      "calories": 25
+    },
+    {
+      "item": "Honey (1 tablespoon)",
+      "calories": 64
+    },{
+      "item": "Almond butter (2 tbsp)",
+      "calories": 200
+    },{
+      "item": "Milk (1 cup)",
+      "calories": 150
+    },
+    {
+      "item": "Almond and Nuts Packet",
+      "calories": 100
+    },    {
+      "item": "Olive Oil (1 tablespoon)",
+      "calories": 120
+    },{
+      "item": "Bread (1 slice)",
+      "calories": 70
+    },{
+      "item": "brackfast biscuits (1 packit)",
+      "calories": 230
+    }
+  ]
+}

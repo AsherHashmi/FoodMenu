@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calorie Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        form {
+            display: inline;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            margin-top: 10px;
+        }
+
+        button[type="button"] {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Tracker</h1>
+
+        <p>Total Calories: {{ total_calories }}   Goal:2171</p>
+
+        <ul>
+            <b><span>FoodName:</span></b>
+            {% for index, item in items|enumerate_items %}
+
+            <li>
+                <span>{{ item.foodname }}</span>
+                {% if item.calories %}
+                <span>{{ item.amount }}</span>
+                <span>{{ item.calories }} calories</span>
+                {% endif %}
+
+                <form method="post" action="/">
+                    <input type="hidden" name="remove_item" value="{{ index }}">
+                    <button type="submit">Remove</button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h2>Add Item</h2>
+        <form method="post" action="/">
+            <label for="new_item">Item Name:</label>
+            <input type="text" id="new_item" name="new_item" required>
+
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" name="calories">
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount">
+
+            <button type="submit">Add Item</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "foodname": "Eggs",
+            "amount": 4,
+            "calories": 280
+        },
+        {
+            "foodname": "Oatmeal",
+            "amount": 1,
+            "calories": 150
+        },
+        {
+            "foodname": "Almonds and Walnuts",
+            "amount": 1,
+            "calories": 100
+        },
+        {
+            "foodname": "Greek yougert",
+            "amount": 1,
+            "calories": 100
+        },
+        {
+            "foodname": "Milk (1 cup)",
+            "amount": 1,
+            "calories": 150
+        },
+        {
+            "foodname": "Almond butter (2 tbsp)",
+            "amount": 1,
+            "calories": 200
+        }
+    ]
+}
